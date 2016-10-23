@@ -29,6 +29,12 @@
     <activity
         android:name=".SmoothingProActivity"
         android:label="@string/app_name"/>
+    <activity
+        android:name=".EroDilActivity"
+        android:label="@string/app_name"/>
+    <activity
+        android:name=".PyramidsActivity"
+        android:label="@string/app_name"/>
 
   </application>
 
