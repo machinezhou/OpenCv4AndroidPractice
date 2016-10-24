@@ -3,10 +3,26 @@
   <string name="action_settings">Settings</string>
 
   <string name="original">原图</string>
+  <string name="reset">重置</string>
   <string name="smoothing_process">平滑处理</string>
+  <string name="erode_dilate">腐蚀与膨胀</string>
+  <string name="pyramids">图像金字塔</string>
+  <string name="filter2d">自己的线性滤波</string>
 
   <string name="homogeneous_blur">均值平滑</string>
   <string name="gaussian_blur">高斯平滑</string>
   <string name="median_blur">中值平滑</string>
   <string name="bilateral_blur">双边平滑</string>
+
+  <string name="erode">腐蚀</string>
+  <string name="dilate">膨胀</string>
+  <string name="opening">开运算</string>
+  <string name="closing">闭运算</string>
+  <string name="morphological_gradient">形态梯度</string>
+  <string name="top_hat">顶帽</string>
+  <string name="black_hat">黑帽</string>
+
+  <string name="pyramid_up">向上采样</string>
+  <string name="pyramid_down">向下采样</string>
+  <string name="threshold">阈值</string>
 </resources>

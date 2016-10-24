@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
   <Button
@@ -8,6 +9,31 @@
       android:text="@string/smoothing_process"
       android:gravity="center"
       android:textSize="@dimen/button_text_size"
+      android:layout_margin="@dimen/small_margin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  <Button
+      android:id="@+id/button_erode_dilate"
+      android:text="@string/erode_dilate"
+      android:gravity="center"
+      android:textSize="@dimen/button_text_size"
+      android:layout_margin="@dimen/small_margin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  <Button
+      android:id="@+id/button_pyramid"
+      android:text="@string/pyramids"
+      android:gravity="center"
+      android:textSize="@dimen/button_text_size"
+      android:layout_margin="@dimen/small_margin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  <Button
+      android:id="@+id/button_filter2d"
+      android:text="@string/filter2d"
+      android:gravity="center"
+      android:textSize="@dimen/button_text_size"
+      android:layout_margin="@dimen/small_margin"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 </LinearLayout>
