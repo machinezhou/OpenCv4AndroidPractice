@@ -7,6 +7,7 @@
   <string name="smoothing_process">平滑处理</string>
   <string name="erode_dilate">腐蚀与膨胀</string>
   <string name="pyramids">图像金字塔</string>
+  <string name="filter2d">自己的线性滤波</string>
 
   <string name="homogeneous_blur">均值平滑</string>
   <string name="gaussian_blur">高斯平滑</string>

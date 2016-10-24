@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.button_smoothing).setOnClickListener(this);
     findViewById(R.id.button_erode_dilate).setOnClickListener(this);
     findViewById(R.id.button_pyramid).setOnClickListener(this);
+    findViewById(R.id.button_filter2d).setOnClickListener(this);
   }
 
   @Override public void onResume() {
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         break;
       case R.id.button_pyramid:
         startActivity(new Intent(MainActivity.this, PyramidsActivity.class));
+        break;
+      case R.id.button_filter2d:
+        startActivity(new Intent(MainActivity.this, Filter2DActivity.class));
         break;
       default:
         break;
