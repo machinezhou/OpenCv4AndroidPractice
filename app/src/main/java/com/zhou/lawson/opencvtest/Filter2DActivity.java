@@ -81,12 +81,6 @@ public final class Filter2DActivity extends AppCompatActivity {
   private void handleChange(int size, double element) {
     Utils.bitmapToMat(originalBitmap, inMat);
     kernel = new Mat(size, size, CV_32FC1, new Scalar(element));  //创建一个充满element值的矩阵
-    //test print elements
-    //for (int i = 0; i < kernel.width(); i++) {
-    //  for (int j = 0; j < kernel.height(); j++) {
-    //    Log.e("--->>>>   B   ", Arrays.toString(kernel.get(i, j)) + "");
-    //  }
-    //}
     Imgproc.filter2D(inMat, outMat, inMat.depth(), kernel);
     Utils.matToBitmap(outMat, bitmap);
     whiteBoard.setImageBitmap(bitmap);
