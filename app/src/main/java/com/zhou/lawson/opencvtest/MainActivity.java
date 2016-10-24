@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(new Intent(MainActivity.this, BorderActivity.class));
         break;
       case R.id.button_sobel:
-        startActivity(new Intent(MainActivity.this, SobelActivity.class));
+        startActivity(new Intent(MainActivity.this, SobelLapActivity.class));
         break;
       default:
         break;

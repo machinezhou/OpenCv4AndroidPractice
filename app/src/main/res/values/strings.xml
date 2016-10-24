@@ -31,4 +31,5 @@
   <string name="border_replicate">复制填充</string>
 
   <string name="sobel">Sobel</string>
+  <string name="laplace">Laplace</string>
 </resources>
