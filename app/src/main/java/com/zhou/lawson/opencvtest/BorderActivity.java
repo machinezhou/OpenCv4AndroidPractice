@@ -48,7 +48,9 @@ public final class BorderActivity extends AppCompatActivity implements View.OnCl
 
     originalBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.test_image_512);
     bitmap = originalBitmap.copy(originalBitmap.getConfig(), true);
-    //此处需要设置imageview或其父view的背景，否则添加的border显示不出
+    /**
+     * 此处需要设置imageview或其父view的背景，否则添加的border显示不出
+     */
     whiteBoard.setBackgroundColor(ContextCompat.getColor(this, android.R.color.darker_gray));
     whiteBoard.setImageBitmap(originalBitmap);
   }
@@ -58,7 +60,9 @@ public final class BorderActivity extends AppCompatActivity implements View.OnCl
 
     int topBottom = (int) (0.05 * inMat.rows());
     int leftRight = (int) (0.05 * inMat.cols());
-    //opencv4android并不提供RNG类，因此需要java.util.Random代劳
+    /**
+     * opencv4android并不提供RNG类，因此需要java.util.Random代劳
+     */
     int r = random.nextInt(256);
     int g = random.nextInt(256);
     int b = random.nextInt(256);

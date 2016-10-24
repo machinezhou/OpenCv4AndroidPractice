@@ -29,4 +29,6 @@
 
   <string name="border_constant">常数填充</string>
   <string name="border_replicate">复制填充</string>
+
+  <string name="sobel">Sobel</string>
 </resources>
