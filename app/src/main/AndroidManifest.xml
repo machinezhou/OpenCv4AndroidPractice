@@ -44,6 +44,12 @@
     <activity
         android:name=".SobelLapActivity"
         android:label="@string/app_name"/>
+    <activity
+        android:name=".CannyActivity"
+        android:label="@string/app_name"/>
+    <activity
+        android:name=".HoughActivity"
+        android:label="@string/app_name"/>
 
   </application>
 

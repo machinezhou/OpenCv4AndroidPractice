@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.button_filter2d).setOnClickListener(this);
     findViewById(R.id.button_border).setOnClickListener(this);
     findViewById(R.id.button_sobel).setOnClickListener(this);
+    findViewById(R.id.button_canny).setOnClickListener(this);
+    findViewById(R.id.button_hough).setOnClickListener(this);
   }
 
   @Override public void onResume() {
@@ -55,6 +57,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         break;
       case R.id.button_sobel:
         startActivity(new Intent(MainActivity.this, SobelLapActivity.class));
+        break;
+      case R.id.button_canny:
+        startActivity(new Intent(MainActivity.this, CannyActivity.class));
+        break;
+      case R.id.button_hough:
+        startActivity(new Intent(MainActivity.this, HoughActivity.class));
         break;
       default:
         break;

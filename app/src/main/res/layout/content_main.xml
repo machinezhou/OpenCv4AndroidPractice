@@ -52,4 +52,20 @@
       android:layout_margin="@dimen/small_margin"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
+  <Button
+      android:id="@+id/button_canny"
+      android:text="@string/canny"
+      android:gravity="center"
+      android:textSize="@dimen/button_text_size"
+      android:layout_margin="@dimen/small_margin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  <Button
+      android:id="@+id/button_hough"
+      android:text="@string/hough"
+      android:gravity="center"
+      android:textSize="@dimen/button_text_size"
+      android:layout_margin="@dimen/small_margin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
 </LinearLayout>

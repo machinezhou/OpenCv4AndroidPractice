@@ -10,9 +10,12 @@ import org.opencv.core.Mat;
 
 public class Utilp {
   public static void printMat(Mat src) {
+    Log.e("--->>>>mat  rows: ", src.rows() + "");
+    Log.e("--->>>>mat  cols: ", src.cols() + "");
+    Log.e("--->>>>mat  total: ", src.total() + "");
     for (int i = 0; i < src.width(); i++) {
       for (int j = 0; j < src.height(); j++) {
-        Log.e("--->>>>   mat  array   ", Arrays.toString(src.get(i, j)) + "");
+        Log.e("--->>>>mat  array: ", Arrays.toString(src.get(i, j)) + "");
       }
     }
   }
