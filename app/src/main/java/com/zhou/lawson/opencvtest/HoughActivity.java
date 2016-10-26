@@ -85,7 +85,6 @@ public final class HoughActivity extends AppCompatActivity implements View.OnCli
          */
         Imgproc.HoughCircles(outMat, circles, CV_HOUGH_GRADIENT, 1, outMat.rows() / 20.0, 100, 35,
             0, 0);
-        Utilp.printMat(circles);
         if (circles.empty()) {
           Toast.makeText(this, "未检测到圆圈", Toast.LENGTH_SHORT).show();
         } else {

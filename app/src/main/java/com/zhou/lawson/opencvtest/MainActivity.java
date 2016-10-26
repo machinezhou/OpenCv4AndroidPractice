@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.button_sobel).setOnClickListener(this);
     findViewById(R.id.button_canny).setOnClickListener(this);
     findViewById(R.id.button_hough).setOnClickListener(this);
+    findViewById(R.id.button_remapping).setOnClickListener(this);
   }
 
   @Override public void onResume() {
@@ -63,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         break;
       case R.id.button_hough:
         startActivity(new Intent(MainActivity.this, HoughActivity.class));
+        break;
+      case R.id.button_remapping:
+        startActivity(new Intent(MainActivity.this, RemappingActivity.class));
         break;
       default:
         break;

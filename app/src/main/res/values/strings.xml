@@ -10,6 +10,7 @@
   <string name="filter2d">自己的线性滤波</string>
   <string name="border">添加边界</string>
   <string name="canny">Canny</string>
+  <string name="remapping">重映射</string>
 
   <string name="homogeneous_blur">均值平滑</string>
   <string name="gaussian_blur">高斯平滑</string>
@@ -37,4 +38,9 @@
   <string name="hough">霍夫</string>
   <string name="hough_line">统计概率霍夫线</string>
   <string name="hough_circle">霍夫圆变换</string>
+
+  <string name="remapping_zoom">缩小</string>
+  <string name="remapping_top_bottom_reverse">上下颠倒</string>
+  <string name="remapping_left_right_reverse">左右颠倒</string>
+  <string name="remapping_both_reverse">同时颠倒</string>
 </resources>
