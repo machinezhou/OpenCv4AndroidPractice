@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+      android:id="@+id/white_board"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+  />
+  <LinearLayout
+      android:id="@+id/bottom_layout"
+      android:layout_alignParentBottom="true"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button_original"
+        android:text="@string/reset"
+        android:textSize="@dimen/button_text_size"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_hough_line"
+        android:text="@string/hough_line"
+        android:textSize="@dimen/button_text_size"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_hough_circle"
+        android:text="@string/hough_circle"
+        android:textSize="@dimen/button_text_size"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+</RelativeLayout>

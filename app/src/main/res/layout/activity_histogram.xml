@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+      android:id="@+id/white_board"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+  />
+  <LinearLayout
+      android:layout_alignParentBottom="true"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button_original"
+        android:text="@string/original"
+        android:textSize="@dimen/button_text_size"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_histogram_equalize"
+        android:text="@string/histogram_equalize"
+        android:textSize="@dimen/button_text_size"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_histogram_calculate"
+        android:text="@string/histogram_calculate"
+        android:textSize="@dimen/button_text_size"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+</RelativeLayout>

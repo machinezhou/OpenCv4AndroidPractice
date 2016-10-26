@@ -23,6 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.button_erode_dilate).setOnClickListener(this);
     findViewById(R.id.button_pyramid).setOnClickListener(this);
     findViewById(R.id.button_filter2d).setOnClickListener(this);
+    findViewById(R.id.button_border).setOnClickListener(this);
+    findViewById(R.id.button_sobel).setOnClickListener(this);
+    findViewById(R.id.button_canny).setOnClickListener(this);
+    findViewById(R.id.button_hough).setOnClickListener(this);
+    findViewById(R.id.button_remapping).setOnClickListener(this);
+    findViewById(R.id.button_affine_transform).setOnClickListener(this);
+    findViewById(R.id.button_histogram).setOnClickListener(this);
   }
 
   @Override public void onResume() {
@@ -47,6 +54,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         break;
       case R.id.button_filter2d:
         startActivity(new Intent(MainActivity.this, Filter2DActivity.class));
+        break;
+      case R.id.button_border:
+        startActivity(new Intent(MainActivity.this, BorderActivity.class));
+        break;
+      case R.id.button_sobel:
+        startActivity(new Intent(MainActivity.this, SobelLapActivity.class));
+        break;
+      case R.id.button_canny:
+        startActivity(new Intent(MainActivity.this, CannyActivity.class));
+        break;
+      case R.id.button_hough:
+        startActivity(new Intent(MainActivity.this, HoughActivity.class));
+        break;
+      case R.id.button_remapping:
+        startActivity(new Intent(MainActivity.this, RemappingActivity.class));
+        break;
+      case R.id.button_affine_transform:
+        startActivity(new Intent(MainActivity.this, AffineActivity.class));
+        break;
+      case R.id.button_histogram:
+        startActivity(new Intent(MainActivity.this, HistogramActivity.class));
         break;
       default:
         break;
