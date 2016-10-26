@@ -12,7 +12,6 @@ import org.opencv.core.Mat;
 
 public class Utilp {
   public static String printMat(Mat src) {
-
     int rows = src.rows();
     int cols = src.cols();
 
@@ -29,7 +28,7 @@ public class Utilp {
     return log.toString();
   }
 
-  public static void printArray(double[] array) {
+  public static String printArray(double[] array) {
     StringBuilder log =
         new StringBuilder("Array total ").append(array.length).append(" [").append("\n\r");
     for (double aTemp : array) {
@@ -37,6 +36,7 @@ public class Utilp {
     }
     log.append(" ]");
     Log.e("LOG ", log.toString());
+    return log.toString();
   }
 
   public static String printArray(float[] array) {
@@ -51,19 +51,18 @@ public class Utilp {
   }
 
   public static void writeTxtFile(String content, String path) {
-    String strContent = content + "\n";
+    content += "\n\r";
     try {
       File file = new File(path);
       if (!file.exists()) {
-        Log.d("TestFile", "Create the file:" + path);
         file.createNewFile();
       }
       RandomAccessFile raf = new RandomAccessFile(file, "rw");
       raf.seek(file.length());
-      raf.write(strContent.getBytes());
+      raf.write(content.getBytes());
       raf.close();
     } catch (Exception e) {
-      Log.e("TestFile", "Error on write File.");
+      e.printStackTrace();
     }
   }
 }

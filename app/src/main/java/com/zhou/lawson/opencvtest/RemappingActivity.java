@@ -55,9 +55,6 @@ public final class RemappingActivity extends AppCompatActivity implements View.O
   private void switchFilter(int filter) {
     Utils.bitmapToMat(originalBitmap, inMat);
 
-    //double[] temp = inMat.get(0, 0);
-    //Utilp.printArray(temp);
-
     int rows = inMat.rows();
     int cols = inMat.cols();
     float[] pixelsX = new float[rows * cols];
@@ -68,7 +65,7 @@ public final class RemappingActivity extends AppCompatActivity implements View.O
         switch (filter) {
           case R.id.button_remapping_zoom:
             /**
-             * 缩小一半方法显示不对
+             * error: 缩小一半方法显示不对
              *
              * 详情：<link>http://answers.opencv.org/question/106715/remap-android/</>
              */
@@ -81,7 +78,7 @@ public final class RemappingActivity extends AppCompatActivity implements View.O
             }
             break;
           /**
-           * 其余三个显示正常，但会在top和left的位置出现一条黑线
+           * warning: 其余三个显示正常，但会在top和left的位置出现一条黑线
            */
           case R.id.button_remapping_top_bottom_reverse:
             pixelsX[j * cols + i] = i;

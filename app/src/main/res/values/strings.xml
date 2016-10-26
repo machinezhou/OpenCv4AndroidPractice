@@ -11,6 +11,8 @@
   <string name="border">添加边界</string>
   <string name="canny">Canny</string>
   <string name="remapping">重映射</string>
+  <string name="affine_transform">仿射变换</string>
+  <string name="histogram">直方图</string>
 
   <string name="homogeneous_blur">均值平滑</string>
   <string name="gaussian_blur">高斯平滑</string>
@@ -43,4 +45,10 @@
   <string name="remapping_top_bottom_reverse">上下颠倒</string>
   <string name="remapping_left_right_reverse">左右颠倒</string>
   <string name="remapping_both_reverse">同时颠倒</string>
+
+  <string name="warp_affine">仿射变换</string>
+  <string name="rotate_matrix_2d">旋转</string>
+
+  <string name="histogram_equalize">均衡化</string>
+  <string name="histogram_calculate">直方图计算</string>
 </resources>
