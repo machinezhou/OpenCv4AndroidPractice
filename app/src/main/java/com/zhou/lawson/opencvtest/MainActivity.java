@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.button_remapping).setOnClickListener(this);
     findViewById(R.id.button_affine_transform).setOnClickListener(this);
     findViewById(R.id.button_histogram).setOnClickListener(this);
+    findViewById(R.id.button_backproj).setOnClickListener(this);
   }
 
   @Override public void onResume() {
@@ -75,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         break;
       case R.id.button_histogram:
         startActivity(new Intent(MainActivity.this, HistogramActivity.class));
+        break;
+      case R.id.button_backproj:
+        startActivity(new Intent(MainActivity.this, HistBackprojActivity.class));
         break;
       default:
         break;

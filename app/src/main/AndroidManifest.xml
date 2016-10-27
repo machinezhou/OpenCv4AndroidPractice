@@ -61,6 +61,9 @@
     <activity
         android:name=".HistogramActivity"
         android:label="@string/app_name"/>
+    <activity
+        android:name=".HistBackprojActivity"
+        android:label="@string/app_name"/>
 
   </application>
 

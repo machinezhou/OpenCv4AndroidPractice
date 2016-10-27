@@ -13,6 +13,7 @@
   <string name="remapping">重映射</string>
   <string name="affine_transform">仿射变换</string>
   <string name="histogram">直方图</string>
+  <string name="backproj">反向投影</string>
 
   <string name="homogeneous_blur">均值平滑</string>
   <string name="gaussian_blur">高斯平滑</string>
@@ -51,4 +52,6 @@
 
   <string name="histogram_equalize">均衡化</string>
   <string name="histogram_calculate">直方图计算</string>
+
+  <string name="backproj_calculate">反向投影计算</string>
 </resources>
